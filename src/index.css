@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+        --color-yellow: #FDA214;
+        --color-light-blue: #BCCED9;
+        --color-slate-blue: #304859;
+        --color-dark-blue: #152938;
+        --color-white: #FCFCFC;
+        --color-off-white: #F2F2F2;
+        --color-black: #191919;
+        --color-steel-blue: #7191A5;
+        --color-sky-blue: #6395B8;
+
+        --text-h1: 48px;
+        --text-h2: 32px;
+        --text-h3: 20px;
+        --text-body: 18px;
+        --text-game-6: 44px;
+        --text-game-4: 56px;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", serif;
+    font-weight: 700;
+    font-style: normal;
+}
