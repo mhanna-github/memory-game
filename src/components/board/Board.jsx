@@ -168,6 +168,7 @@ export default function Board({ gridSize, onRestart }) {
               <GameStats 
                 moves={moves} 
                 onTimeUpdate={setGameTime}
+                savedTime={gameTime}
               />
         </div>
     );
