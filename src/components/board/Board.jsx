@@ -145,12 +145,13 @@ export default function Board({ gridSize, onRestart }) {
             </div>
             <div className="flex justify-center">
                 <div className={`grid ${gridSize === '4x4' ? 'grid-cols-4' : 'grid-cols-6'} 
-                    max-w-[700px] gap-[15px] lg:p-[30px] rounded-lg w-full`}>
+                    max-w-[700px] lg:gap-[10px] gap-[10px] lg:p-[20px] p-0 w-full`}>
                     {cards.map(card => (
                         <button
                             key={card.id}
-                            className={`cursor-pointer aspect-square rounded-full flex items-center justify-center text-game-4
-                                transform transition-all duration-250 ease-in-out min-w-[72px] min-h-[72px]
+                            className={`cursor-pointer aspect-square rounded-full flex items-center justify-center
+                                transform transition-all duration-250 ease-in-out
+                                text-[24px] md:text-game-4
                                 ${card.isMatched 
                                     ? "bg-yellow text-white"
                                     : card.isFlipped

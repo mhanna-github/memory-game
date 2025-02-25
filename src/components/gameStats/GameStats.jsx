@@ -22,12 +22,12 @@ export default function GameStats({ moves, onTimeUpdate }) {
     };
 
     return (
-        <div className="flex justify-center gap-[24px] lg:mt-[13px] mt-10">
-            <div className="bg-grey rounded-[10px] p-[16px] max-w-[250px] flex flex-row gap-[50px] items-center">
+        <div className="flex justify-center gap-[30px] mt-10 lg:mt-3">
+            <div className="bg-grey rounded-[10px] p-[16px] w-fit flex flex-row gap-[15px] lg:gap-[50px] items-center">
                 <span className="text-steel-blue text-h3">Time</span>
                 <span className="text-dark-blue text-h2 w-[70px] text-center">{formatTime(seconds)}</span>
             </div>
-            <div className="bg-grey rounded-[10px] p-[16px] max-w-[250px] flex flex-row gap-[50px] items-center">
+            <div className="bg-grey rounded-[10px] p-[16px] w-fit flex flex-row gap-[15px] lg:gap-[50px] items-center">
                 <span className="text-steel-blue text-h3">Moves</span>
                 <span className="text-dark-blue text-h2 w-[70px] text-center">{moves}</span>
             </div>
