@@ -1,23 +1,22 @@
 import { useState } from "react";
 import Button from "../button/Button";
 
-export default function GameOptions() {
+export default function GameOptions({ onStartGame }) {
     const [activeTheme, setActiveTheme] = useState(null);
     const [activePlayers, setActivePlayers] = useState(null);
     const [activeGridSize, setActiveGridSize] = useState(null);
 
     const handleStartGame = () => {
         if (!activeTheme || !activePlayers || !activeGridSize) {
-            alert('Please select all options before starting the game')
-            return
+            alert('Please select all options before starting the game');
+            return;
         }
         
-        console.log('Starting game with:', {
+        onStartGame({
             theme: activeTheme,
             players: activePlayers,
             gridSize: activeGridSize
         });
-        // TODO: Add game start logic
     };
 
     return (

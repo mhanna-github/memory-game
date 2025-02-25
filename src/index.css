@@ -12,6 +12,7 @@
         --color-black: #191919;
         --color-steel-blue: #7191A5;
         --color-sky-blue: #6395B8;
+        --color-grey: #C9D6DE;
 
         --text-h1: clamp(40px, 5vw, 48px);
         --text-h2: clamp(24px, 4vw, 32px);
